@@ -27,9 +27,9 @@ function removeKFromList(l, k) {
   let current = l;
   let prev = null;
 
-  while (current != null) {
+  while (current !== null) {
     if (current.value == k) {
-      if (current == l) {
+      if (current === l) {
         l = current.next;
       }
       if (prev) {
